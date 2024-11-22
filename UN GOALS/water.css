@@ -1,0 +1,243 @@
+body {
+    font-family: sans-serif, Arial;
+    color: #3f2860;
+    background-color: #429bce  ;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+header{
+    color:#000000;
+    height: 200px;
+    display: inline;
+    justify-content:space-evenly ;
+
+}
+
+header h1{
+    align-content: center;
+}
+
+#wrapper{
+    background-color: #48b20a78;
+    height: 10vh;
+    overflow:visible;
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+#logo{
+    float: right;
+    display: none;
+    background-color:#7f869a;
+    padding:2%;
+    opacity: 0.5;
+}
+
+nav {
+    text-align: center;
+    padding: 2px;
+    height: 100px;
+}
+
+nav > header > ul{
+    list-style-type: none;
+    
+}
+
+nav > header > ul > li{
+    display: inline;
+}
+
+nav > header > ul > li:nth-child(1){
+    color: #ffffff;
+    filter: hue-rotate(240 + deg)
+}
+
+nav > header > ul > li:nth-child(2){
+    color: #9dff00;
+    background-color:#9dff00 ;
+    filter: hue-rotate(240 + deg)
+}
+
+nav > header > ul > li:nth-child(3){
+    color: #1336b1;
+    filter: hue-rotate(240 + deg)
+}
+
+nav > header > ul > li:nth-child(4){
+    color: #09ff00;
+    filter: hue-rotate(240 + deg)
+}
+nav > header > ul > li:nth-child(5){
+    color: #00cd7e;
+    filter: hue-rotate(240 + deg)
+}
+nav > header > ul > li:nth-child(6){
+    color: #ffc400;
+    filter: hue-rotate(240 + deg)
+}
+
+nav > header > ul > li > a{
+    text-decoration: none;
+    font-family: 'VT323', monospace;
+    font-size: 35px;
+    padding: 5px;
+    white-space: nowrap;
+    color: #fff;
+    background: transparent;
+    background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 2s ease-out;
+   
+
+    &:hover{
+        color: #00f7ff;
+        background-position: 500% 50%;
+        
+    }
+    
+
+}
+
+
+button {
+    flex: 1;
+    padding: 5px 5px;
+    margin: 25px;
+    border-radius: 999px;
+    border: 2px solid red;
+    font-family: 'VT323', monospace;
+    font-size: 15px;
+    text-shadow: 0 3px 5px rgba(#000, 0.25);
+    white-space: nowrap;
+    color: #fff;
+    background: transparent;
+    background-image: url(https://web.archive.org/web/20160312084140im_/http://splatoon.nintendo.com/assets/img/nav-bg-fill-blue.png?1443460871);
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    transition: 2.5s ease-out;
+    
+    &:hover {
+        background-position: 500% 50%;
+    }
+}
+
+
+
+
+.a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.active{
+    border-bottom: 3px solid #32312f;
+}
+
+main{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 16px;
+    border: 2px solid #a6a0ba;
+    border-radius: 20px;
+}
+
+.dodgerblue{
+    color: dodgerblue;
+}
+section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #e4d8c5;
+}
+
+.services{
+    float:left;
+    width: 47%;
+    height: 400px; 
+    background-color: white;
+    padding: 24px 11px 24px 11px;
+    margin: 15px auto 20px 15px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.services img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
+p:has(.btn){ text-align: center;}
+
+footer{
+    background-color: #a59c96;
+    font-size: 0.9em;
+    text-align: center;
+    color: #000000;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+footer a{   
+    color: #000000;
+    
+}
+
+footer a:hover{
+    color: #fff;
+}
+
+
+@media only screen and (max-width:600px){
+    
+    header{
+        height:18vh;
+    }
+    
+    header h1{
+        display:inline-block;
+        line-height: 50%;
+    }
+    nav ul li{
+        display: block;
+        width:70%;
+        padding:10px;
+        font-size: small;
+    }
+    #wrapper{
+        position: relative;
+
+    }
+    #logo{
+        display: block;
+    }
+    nav{
+        position: absolute;
+        right:10px;
+        top:20px;
+    }
+    .services{
+        width: 92%;
+        background-color: white;
+        padding: 24px 11px;
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+    main{
+        margin-top: 5%;
+        padding-top: 2%;
+    }
+    
+}
+
+/*<link rel="stylesheet" href="yoga.css">*/
+
+
